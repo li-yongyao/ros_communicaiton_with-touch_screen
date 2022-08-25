@@ -1,0 +1,6 @@
+<launch>
+   <arg name="node_start_delay" default="1.0" />
+    <node name="user_interface_node" pkg="user_interface" type="user_interface_node" output="screen"  launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " />
+
+
+</launch>

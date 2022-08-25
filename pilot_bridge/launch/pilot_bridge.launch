@@ -1,0 +1,34 @@
+<launch>
+    <node name="pilot_bridge_node" pkg="pilot_bridge" type="pilot_bridge_node" output="screen"  respawn="true">
+        <param name = "imu_topic_name" value = "/imu" />
+        <param name="front_laser_topic_name" value="/fcbot/laser/scan" />
+        <param name="rear_laser_topic_name" value="/fcbot/rear_laser/scan" />
+        <!-- <param name="sonar1_topic_name" value="/sonar1"  />
+        <param name="sonar2_topic_name" value="/sonar2"  />
+        <param name="sonar3_topic_name" value="/sonar3"  />
+        <param name="sonar4_topic_name" value="/sonar4"  />
+        <param name="sonar5_topic_name" value="/sonar5"  />
+        <param name="sonar6_topic_name" value="/sonar6"  />
+        <param name="sonar7_topic_name" value="/sonar7"  />
+        <param name="sonar8_topic_name" value="/sonar8"  /> -->
+        <param name="sonar1_topic_name" value="/sensor/sonar_front_1"  />
+        <param name="sonar2_topic_name" value="/sensor/sonar_front_2"  />
+        <param name="sonar3_topic_name" value="/sensor/sonar_front_3"  />
+        <param name="sonar4_topic_name" value="/sensor/sonar_front_ground"  />
+        <param name="sonar5_topic_name" value="/sensor/sonar_left_1"  />
+        <param name="sonar6_topic_name" value="/sensor/sonar_right_1"  />
+        <param name="sonar7_topic_name" value="/sensor/sonar_rear_ground"  />
+        <param name="sonar8_topic_name" value="/sensor/sonar_rear_1"  />
+
+        <param name="auto_charge_topic_name" value="/charge"  />
+        <param name="navigation_topic_name" value="/camera/depth/image_raw"  />
+         <param name="camera_topic_name" value="/camera/depth/image_raw"  />
+
+         <param name="room_list" value="my_recorded_path0813"  />
+
+</node>
+
+   
+        <include file="$(find user_interface)/launch/user_interface.launch"/>
+
+</launch>

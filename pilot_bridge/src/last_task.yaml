@@ -1,0 +1,13 @@
+currentprogress:
+- my_recorded_path0811
+- 6
+lastcmd: start
+lastknownlocation: 2.87410908303,-2.88421268993,0.0,0.0,0.0,0.259908189784,0.965633332525
+my_recorded_path0811_quality:
+  current_idx: 6
+  execution_time_sec: 0
+  goodratio: 0.7142857142857143
+  roomcoverageratio: 0.17647058823529413
+  start_idx: 0
+  total_points: 33
+roomlist: my_recorded_path0811,my_recorded_path0813
